@@ -14,3 +14,25 @@ class conta {
         this.extrato = extrato;
     }
 }
+//despesas e receitas
+class receitas {
+    cliente;
+    despesas;
+    receitaCliente;
+    constructor(cliente, despesas, receitaCliente) {
+        this.cliente = cliente;
+        this.despesas = despesas;
+        this.receitaCliente = receitaCliente;
+    }
+}
+//metas financeiras
+class planejamento {
+    metas;
+    saldo;
+    progresso;
+    constructor(metas, saldo, progresso) {
+        this.metas = metas;
+        this.saldo = saldo;
+        this.progresso = progresso;
+    }
+}
