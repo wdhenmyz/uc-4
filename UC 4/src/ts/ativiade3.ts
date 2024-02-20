@@ -37,3 +37,9 @@ class planejamento{
     }
 
 }
+
+const conta = new conta()
+
+const receitas = new receitas()
+
+const planejamento = new planejamento()

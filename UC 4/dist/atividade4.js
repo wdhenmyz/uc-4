@@ -44,3 +44,6 @@ class comunicacao {
         this.registro2 = registro2;
     }
 }
+const projetos = new projetos();
+const controle = new controle();
+const comunicacao = new comunicacao();

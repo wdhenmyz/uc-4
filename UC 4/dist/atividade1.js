@@ -46,3 +46,6 @@ class pacientes {
         this.email = email;
     }
 }
+const funcionario = new funcionario();
+const consultas = new consultas();
+const pacientes = new pacientes();

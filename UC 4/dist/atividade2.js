@@ -44,3 +44,6 @@ class emprestimos {
         this.registro = registro;
     }
 }
+const livros = new livros();
+const usuario = new usuario();
+const emprestimos = new emprestimos();
