@@ -36,8 +36,8 @@ class emprestimos{
     dataEmprestimo: Date;
     dataDevolucao: Date;
     info: usuario;
-    livros : livros;
-    constructor(registro: Array<string>, dataEmprestimo: Date, dataDevolucao: Date, info: usuario, livros : livros,){
+    livros: livros;
+    constructor(registro: Array<string>, dataEmprestimo: Date, dataDevolucao: Date, info: usuario, livros : livros){
         this.dataDevolucao = dataDevolucao
         this.dataEmprestimo = dataEmprestimo
         this.info = info
@@ -47,7 +47,5 @@ class emprestimos{
 }
 
 const livros = new livros()
-
 const usuario = new usuario()
-
 const emprestimos = new emprestimos()

@@ -18,18 +18,6 @@ class funcionario{
     }
 }
 
-//cadastro de consultas: dados específicos de cada consulta
-class consultas{
-    data: Date
-    tipo: string
-    local: string
-    constructor(data: Date, tipo: string, local: string){
-        this.data = data
-        this.tipo = tipo
-        this.local = local
-    }
-}
-
 //cadastro de pacientes: dados referentes ao paciente
 class pacientes{
     nome: string;
@@ -48,8 +36,24 @@ class pacientes{
     }
 }
 
+//cadastro de consultas: dados específicos de cada consulta
+class consultas{
+    data: Date;
+    tipo: string;
+    local: string;
+    medico: funcionario;
+    paciente: pacientes;
+    constructor(data: Date, tipo: string, local: string, medico: funcionario, paciente: pacientes){
+        this.data = data
+        this.tipo = tipo
+        this.local = local
+        this.medico = medico
+        this.paciente = paciente
+    }
+}
+
+
+
 const funcionario = new funcionario()
-
-const consultas = new consultas()
-
 const pacientes = new pacientes()
+const consultas = new consultas()

@@ -35,9 +35,9 @@ class comunicacao{
     pessoa: Array<string>;
     id: Array<string>;
     arquivos: Array<string>;
-    registro1: Array<controle>;
-    registro2: Array<projetos>;
-    constructor(pessoa: Array<string>, id: Array<string>, arquivos: Array<string>, registro1: Array<controle>, registro2: Array<projetos>){
+    registro1: controle;
+    registro2: projetos;
+    constructor(pessoa: Array<string>, id: Array<string>, arquivos: Array<string>, registro1: controle, registro2: projetos){
         this.pessoa = pessoa
         this.id = id
         this.arquivos = arquivos
@@ -47,7 +47,5 @@ class comunicacao{
 }
 
 const projetos = new projetos()
-
 const controle = new controle()
-
 const comunicacao = new comunicacao()

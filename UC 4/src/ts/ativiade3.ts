@@ -28,9 +28,9 @@ class receitas{
 //metas financeiras
 class planejamento{
     metas: Array<string>;
-    saldo: Array<number>;
+    saldo: number;
     progresso: Array<string>;
-    constructor(metas: Array<string>, saldo: Array<number>, progresso: Array<string>){
+    constructor(metas: Array<string>, saldo: number, progresso: Array<string>){
         this.metas = metas
         this.saldo = saldo
         this.progresso = progresso 
@@ -39,7 +39,5 @@ class planejamento{
 }
 
 const conta = new conta()
-
 const receitas = new receitas()
-
 const planejamento = new planejamento()

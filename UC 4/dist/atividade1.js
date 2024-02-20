@@ -18,17 +18,6 @@ class funcionario {
         this.email = email;
     }
 }
-//cadastro de consultas: dados específicos de cada consulta
-class consultas {
-    data;
-    tipo;
-    local;
-    constructor(data, tipo, local) {
-        this.data = data;
-        this.tipo = tipo;
-        this.local = local;
-    }
-}
 //cadastro de pacientes: dados referentes ao paciente
 class pacientes {
     nome;
@@ -46,6 +35,21 @@ class pacientes {
         this.email = email;
     }
 }
+//cadastro de consultas: dados específicos de cada consulta
+class consultas {
+    data;
+    tipo;
+    local;
+    medico;
+    paciente;
+    constructor(data, tipo, local, medico, paciente) {
+        this.data = data;
+        this.tipo = tipo;
+        this.local = local;
+        this.medico = medico;
+        this.paciente = paciente;
+    }
+}
 const funcionario = new funcionario();
-const consultas = new consultas();
 const pacientes = new pacientes();
+const consultas = new consultas();
