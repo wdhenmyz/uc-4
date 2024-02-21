@@ -44,6 +44,7 @@ class emprestimos {
         this.registro = registro;
     }
 }
-const livros = new livros();
-const usuario = new usuario();
-const emprestimos = new emprestimos();
+const livro1 = new livros('orion', 'eren', 'casa', 'aventura', 23);
+console.log(livro1);
+//const usuario = new usuario()
+//const emprestimos = new emprestimos()
