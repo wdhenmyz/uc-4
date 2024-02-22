@@ -72,5 +72,5 @@ class emprestimos{
 
 const livro1 = new livros('orion','eren','casa','aventura',23)
 console.log(livro1)
-const usuario = new usuario()
-const emprestimos = new emprestimos()
+//const usuario = new usuario()
+//const emprestimos = new emprestimos()
