@@ -1,5 +1,5 @@
 
-class pessoa{
+class alguem{
     nome: string;
     idade: number;
     genero?: string;
@@ -10,7 +10,7 @@ class pessoa{
     }
 }
 
-const pessoa1 = new pessoa('aura',18,'F');
-const pessoa2 = new pessoa('eren',14,'M');
+const pessoa1 = new alguem('aura',18,'F');
+const pessoa2 = new alguem('eren',14,'M');
 
 console.log(pessoa2.nome)

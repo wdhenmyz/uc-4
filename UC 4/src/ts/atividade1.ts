@@ -18,7 +18,6 @@ class pessoa{
         this.genero = genero
     }
     mostrarDados(){
-        console.log('----------dados de pessoa-------------------------')
         console.log(`nome-------------------: ${this.nome}`)
         console.log(`email------------------: ${this.email}`)
         console.log(`data de nascimento-----: ${this.data_nascimento.toLocaleDateString(`pt-BR`)}`)
@@ -29,7 +28,6 @@ class pessoa{
         if(this.genero){
             console.log(`genero-----------------: ${this.genero}`)
         }
-        console.log(`--------------------------------------------------`)
     }
 }
 
@@ -44,14 +42,15 @@ class funcionario extends pessoa{
         this.cargo = cargo
     }
     mostrarDados(){
-        console.log('----------dados do funcionario------------')
-        console.log(`nome-------------: ${this.nome}`)
-        console.log(`email------------: ${this.email}`)
-        console.log(`posição----------: ${this.cargo}`)
-        console.log(`data_nascimento--: ${this.data_nascimento}`)
-        console.log(`telefone---------: ${this.numero}`)
+        console.log('----------dados de funcionário-------------------')
+        super.mostrarDados()
+        console.log(`posição----------------: ${this.cargo}`)
+        console.log(`matricula--------------: ${this.matricula}`)
+        console.log(`--------------------------------------`)
     }
 }
+const funcionario1 = new funcionario('zezinho',new Date('1998-10-25'),'masculino', '999999999-99', '5395999257', 'informatica', 'professor', 'fulano@msn.com', '66753456', ['rua do Senac','numero 200','bairro','cidade'])
+funcionario1.mostrarDados()
 
 //cadastro de pacientes: dados referentes ao paciente
 class pacientes extends pessoa{
@@ -73,6 +72,8 @@ class pacientes extends pessoa{
         console.log(`numero-----------: ${this.numero}`)
     }
 }
+//const paciente1 = new pacientes()
+
 
 //cadastro de consultas: dados específicos de cada consulta
 class consultas{
@@ -98,6 +99,6 @@ class consultas{
     }
 }
 
-const funcionario = new funcionario()
-const pacientes = new pacientes()
-const consultas = new consultas()
+
+
+//const consulta1 = new consultas()

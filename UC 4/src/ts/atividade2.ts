@@ -70,7 +70,7 @@ class emprestimos{
     }
 }
 
-const livro1 = new livros('orion','eren','casa','aventura',23)
-console.log(livro1)
-//const usuario = new usuario()
-//const emprestimos = new emprestimos()
+//const livro1 = new livros('orion','eren','casa','aventura',23)
+//console.log(livro1)
+//const usuario1 = new usuario()
+//const emprestimo1 = new emprestimos()

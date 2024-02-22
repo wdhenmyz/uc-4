@@ -42,12 +42,12 @@ class receitas{
 
 //metas financeiras
 class planejamento{
-    usuario: conta;
+    usuario: usuario;
     receita: receitas;
     metas: Array<string>;
     saldo: number;
     progresso: Array<string>;
-    constructor(usuario: conta , receita: receitas, metas: Array<string>, saldo: number, progresso: Array<string>){
+    constructor(usuario: usuario , receita: receitas, metas: Array<string>, saldo: number, progresso: Array<string>){
         this.usuario = usuario
         this.receita = receita
         this.metas = metas
@@ -64,6 +64,7 @@ class planejamento{
     }
 }
 
-const conta = new conta()
-const receitas = new receitas()
-const planejamento = new planejamento()
+//const usuario1 = new usuario('5599','trabalhador','alto nivel',5445,['977','88'])
+//const receita1 = new receitas()
+//const planejamento1 = new planejamento()
+

@@ -70,6 +70,6 @@ class comunicacao{
     }
 }
 
-const projetos = new projetos()
-const controle = new controle()
-const comunicacao = new comunicacao()
+//const projeto1 = new projetos()
+//const controle1 = new controle()
+//const comunicacao1 = new comunicacao()
