@@ -63,13 +63,9 @@ class pacientes extends pessoa{
     }
     mostrarDados(){
         console.log('------------dados do paciente--------------')
-        console.log(`nome-------------: ${this.nome}`)
-        console.log(`genero-----------: ${this.genero}`)
-        console.log(`data_nascimento--: ${this.data_nascimento}`)
-        console.log(`email------------: ${this.email}`)
-        console.log(`rg---------------: ${this.rg}`)
-        console.log(`cpf--------------: ${this.cpf}`)
-        console.log(`numero-----------: ${this.numero}`)
+        super.mostrarDados
+        console.log(`sintomas---------------: ${this.sintomas}`)
+        console.log(`nivel de risco---------: ${this.classificacao_risco}`)
     }
 }
 //const paciente1 = new pacientes()
