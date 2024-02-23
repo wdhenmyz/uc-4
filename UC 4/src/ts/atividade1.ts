@@ -1,4 +1,4 @@
-class pessoa{
+export class pessoa{
     nome: string;
     email: string;
     data_nascimento: Date; 
@@ -32,7 +32,7 @@ class pessoa{
 }
 
 //cadastro de funcionário: detalhes pessoais e profissionais
-class funcionario extends pessoa{
+export class Funcionario extends pessoa{
     matricula: string;
     cargo: string;
     //método construtor da classe funcionário
@@ -46,11 +46,10 @@ class funcionario extends pessoa{
         super.mostrarDados()
         console.log(`posição----------------: ${this.cargo}`)
         console.log(`matricula--------------: ${this.matricula}`)
-        console.log(`--------------------------------------`)
     }
 }
-const funcionario1 = new funcionario('zezinho',new Date('1998-10-25'),'masculino', '999999999-99', '5395999257', 'informatica', 'professor', 'fulano@msn.com', '66753456', ['rua do Senac','numero 200','bairro','cidade'])
-funcionario1.mostrarDados()
+//const funcionario1 = new Funcionario('zezinho',new Date('1998-10-25'),'masculino', '999999999-99', '5395999257', 'informatica', 'professor', 'fulano@msn.com', '66753456', ['rua do Senac','numero 200','bairro','cidade',])
+//funcionario1.mostrarDados()
 
 //cadastro de pacientes: dados referentes ao paciente
 class pacientes extends pessoa{
@@ -76,9 +75,9 @@ class consultas{
     data: Date;
     convenio: boolean;
     local: string;
-    medico: funcionario;
+    medico: Funcionario;
     paciente: pacientes;
-    constructor(data: Date, convenio: boolean, local: string, medico: funcionario, paciente: pacientes){
+    constructor(data: Date, convenio: boolean, local: string, medico: Funcionario, paciente: pacientes){
         this.data = data
         this.convenio = convenio
         this.local = local
