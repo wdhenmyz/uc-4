@@ -1,11 +1,11 @@
 //cadastro de projetos
 class projetos{
-    nome: string;
-    dataCriação: Date;
-    dataPrazo: Date;
-    tipo: string;
-    equipeResponsavel: string;
-    progresso: [string, string, string, Date, Date];
+    protected nome: string;
+    protected dataCriação: Date;
+    protected dataPrazo: Date;
+    protected tipo: string;
+    protected equipeResponsavel: string;
+    protected progresso: [string, string, string, Date, Date];
     constructor(nome: string, dataCriação: Date, dataPrazo: Date, tipo: string, equipeResponsavel: string, progresso: [string, string, string, Date, Date]){
         this.nome = nome
         this.dataCriação = dataCriação
@@ -27,10 +27,10 @@ class projetos{
 
 //organização de tarefas
 class controle{
-    tarefas: Array<string>;
-    prazoConclusao: Date;
-    responsavel: string;
-    status: [string, string, Date];
+    protected tarefas: Array<string>;
+    protected prazoConclusao: Date;
+    protected responsavel: string;
+    protected status: [string, string, Date];
     constructor(tarefas: Array<string>, prazoConclusao: Date, responsavel: string, status: [string, string, Date]){
         this.tarefas = tarefas
         this.prazoConclusao = prazoConclusao
@@ -48,11 +48,11 @@ class controle{
 
 //comunicação
 class comunicacao{
-    pessoa: Array<string>;
-    id: Array<string>;
-    arquivos: Array<string>;
-    registro1: controle;
-    registro2: projetos;
+    protected pessoa: Array<string>;
+    protected id: Array<string>;
+    protected arquivos: Array<string>;
+    protected registro1: controle;
+    protected registro2: projetos;
     constructor(pessoa: Array<string>, id: Array<string>, arquivos: Array<string>, registro1: controle, registro2: projetos){
         this.pessoa = pessoa
         this.id = id

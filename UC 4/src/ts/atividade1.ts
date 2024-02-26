@@ -1,12 +1,12 @@
-export class pessoa{
-    nome: string;
-    email: string;
-    data_nascimento: Date; 
-    numero: string;
-    rg: string;
-    cpf: string;
-    endereco: string[];
-    genero?: string;
+abstract class pessoa{
+    public nome: string;
+    protected email: string;
+    public data_nascimento: Date; 
+    public numero: string;
+    protected rg: string;
+    protected cpf: string;
+    public endereco: string[];
+    protected genero?: string;
     constructor(nome: string, data_nascimento: Date, email: string, numero: string, rg: string, cpf: string, endereco: string[], genero?: string){
         this.nome = nome
         this.data_nascimento = data_nascimento
@@ -18,23 +18,15 @@ export class pessoa{
         this.genero = genero
     }
     mostrarDados(){
-        console.log(`nome-------------------: ${this.nome}`)
-        console.log(`email------------------: ${this.email}`)
-        console.log(`data de nascimento-----: ${this.data_nascimento.toLocaleDateString(`pt-BR`)}`)
-        console.log(`telefone---------------: ${this.numero}`)
-        console.log(`rg---------------------: ${this.rg}`)
-        console.log(`cpf--------------------: ${this.cpf}`)
-        console.log(`endereço---------------: ${this.endereco}`)
-        if(this.genero){
-            console.log(`genero-----------------: ${this.genero}`)
-        }
+
     }
+    
 }
 
 //cadastro de funcionário: detalhes pessoais e profissionais
 export class Funcionario extends pessoa{
-    matricula: string;
-    cargo: string;
+    protected matricula: string;
+    protected cargo: string;
     //método construtor da classe funcionário
     constructor(nome: string, data_nascimento: Date, genero: string, cpf: string, rg: string, matricula: string, cargo: string, email: string, numero: string, endereco: string[]){
         super(nome, data_nascimento,email, numero, rg, cpf, endereco, genero)
@@ -53,8 +45,8 @@ export class Funcionario extends pessoa{
 
 //cadastro de pacientes: dados referentes ao paciente
 class pacientes extends pessoa{
-    sintomas: string[];
-    classificacao_risco: string;
+    protected sintomas: string[];
+    public classificacao_risco: string;
     constructor(sintomas: string[], classificacao_risco: string, nome: string, data_nascimento: Date, genero: string, rg: string, cpf: string, numero: string, email: string, endereco: string[]){
         super(nome, data_nascimento, email, numero, rg, cpf, endereco, genero)
         this.sintomas = sintomas
@@ -72,11 +64,11 @@ class pacientes extends pessoa{
 
 //cadastro de consultas: dados específicos de cada consulta
 class consultas{
-    data: Date;
-    convenio: boolean;
-    local: string;
-    medico: Funcionario;
-    paciente: pacientes;
+    protected data: Date;
+    protected convenio: boolean;
+    protected local: string;
+    protected medico: Funcionario;
+    protected paciente: pacientes;
     constructor(data: Date, convenio: boolean, local: string, medico: Funcionario, paciente: pacientes){
         this.data = data
         this.convenio = convenio
