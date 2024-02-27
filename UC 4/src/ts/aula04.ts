@@ -1,4 +1,4 @@
-
+/* 
 class alguem{
     nome: string;
     idade: number;
@@ -13,4 +13,4 @@ class alguem{
 const pessoa1 = new alguem('aura',18,'F');
 const pessoa2 = new alguem('eren',14,'M');
 
-console.log(pessoa2.nome)
+console.log(pessoa2.nome) */

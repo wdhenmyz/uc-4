@@ -1,4 +1,4 @@
-class carro{
+/* class carro{
     modelo: string;
     ano: number;
     marca: string;
@@ -15,4 +15,4 @@ class carro{
     }
 }
 
-const carrodev = new carro('opala', 2000, 'chevrolet', 45000, 4.1, 'vermelho')
+const carrodev = new carro('opala', 2000, 'chevrolet', 45000, 4.1, 'vermelho') */

@@ -1,4 +1,4 @@
-//cadastras os livros da biblioteca
+/* //cadastras os livros da biblioteca
 class livros{
     public titulo: string;
     public autor: string;
@@ -69,4 +69,4 @@ class emprestimos{
 //const livro1 = new livros('orion','eren','casa','aventura',23)
 //console.log(livro1)
 //const usuario1 = new usuario()
-//const emprestimo1 = new emprestimos()
+//const emprestimo1 = new emprestimos() */

@@ -1,4 +1,4 @@
-//criação de conta
+/* //criação de conta
 abstract class conta{
     protected id: string;
     protected titularidade: string;
@@ -62,3 +62,4 @@ class planejamento{
 //const receita1 = new receitas()
 //const planejamento1 = new planejamento()
 
+ */

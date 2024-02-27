@@ -1,4 +1,4 @@
-import { Funcionario } from './atividade1'
+/* import { Funcionario } from './atividade1'
 // const funcionario2 = new Funcionario('zezinho',new Date('1998-10-25'),'M', '999999999-99', '5395999257', 'informatica', 'desenvolvedor', 'fulano@msn.com', '66753456', ['rua do Senac','numero 200','bairro','cidade']) 
 
 class Desenvolvedor extends Funcionario{
@@ -149,3 +149,4 @@ fullStack1.mostrarDados()
 
 
 
+ */

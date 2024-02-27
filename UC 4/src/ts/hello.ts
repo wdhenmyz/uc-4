@@ -1,4 +1,4 @@
-// let, var e const
+/* // let, var e const
 //recebendo o formulario
 const formulario = document.getElementById('cadastro') as HTMLFormElement
 
@@ -25,3 +25,4 @@ formulario.addEventListener('submit', (evento)=>{
         }
 
     })
+ */

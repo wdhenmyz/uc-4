@@ -1,4 +1,4 @@
-//cadastro de projetos
+/* //cadastro de projetos
 class projetos{
     protected nome: string;
     protected dataCriação: Date;
@@ -72,4 +72,4 @@ class comunicacao{
 
 //const projeto1 = new projetos()
 //const controle1 = new controle()
-//const comunicacao1 = new comunicacao()
+//const comunicacao1 = new comunicacao() */
